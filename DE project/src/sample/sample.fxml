@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+    <children>
+
+        <TextField fx:id="x0" layoutX="62.0" layoutY="50.0" prefHeight="26.0" prefWidth="122.0" promptText="Enter x0" />
+        <TextField fx:id="y0" layoutX="62.0" layoutY="100.0" prefHeight="26.0" prefWidth="122.0" promptText="Enter y0" />
+        <TextField fx:id="X" layoutX="62.0" layoutY="150.0" prefHeight="26.0" prefWidth="122.0" promptText="Enter X" />
+        <TextField fx:id="N" layoutX="62.0" layoutY="200.0" prefHeight="26.0" prefWidth="122.0" promptText="Enter N" />
+        <TextField fx:id="Ninit" layoutX="62.0" layoutY="250.0" prefHeight="26.0" prefWidth="122.0" promptText="Enter N init" />
+        <TextField fx:id="Nfinal" layoutX="62.0" layoutY="300.0" prefHeight="26.0" prefWidth="122.0" promptText="Enter N final" />
+
+
+        <CheckBox fx:id="all_mtd" layoutX="230.0" layoutY="55.0" mnemonicParsing="false" onAction="#handle_methods" text="All methods">
+            <font>
+                <Font name="System Bold" size="15.0" />
+            </font>
+        </CheckBox>
+        <CheckBox fx:id="euler" layoutX="250.0" layoutY="100.0" mnemonicParsing="false" text="Euler's method" />
+        <CheckBox fx:id="impr" layoutX="250.0" layoutY="150.0" mnemonicParsing="false" text="Improved Euler's method" />
+        <CheckBox fx:id="runge" layoutX="250.0" layoutY="200.0" mnemonicParsing="false" text="Runge-Kutta method" />
+        <CheckBox fx:id="exact" layoutX="250.0" layoutY="250.0" mnemonicParsing="false" text="Exact solution" />
+
+
+        <CheckBox fx:id="all_err" layoutX="500.0" layoutY="55.0" mnemonicParsing="false" onAction="#handle_errors" text="All errors">
+            <font>
+                <Font name="System Bold" size="15.0" />
+            </font>
+        </CheckBox>
+        <CheckBox fx:id="euler_err" layoutX="515.0" layoutY="100.0" mnemonicParsing="false" text="Euler's error" />
+        <CheckBox fx:id="impr_err" layoutX="515.0" layoutY="150.0" mnemonicParsing="false" text="Improved Euler's error" />
+        <CheckBox fx:id="runge_err" layoutX="515.0" layoutY="200.0" mnemonicParsing="false" text="Runge-Kutta's error" />
+        <CheckBox fx:id="tot_err" layoutX="515.0" layoutY="250.0" mnemonicParsing="false" text="Total errors" />
+
+
+        <Button fx:id="btn" layoutX="230.0" layoutY="346.0" mnemonicParsing="false" onAction="#pressButton" prefHeight="49.0" prefWidth="140.0" text="Plot a graph" textFill="#030000" />
+    </children>
+
+
+</AnchorPane>
